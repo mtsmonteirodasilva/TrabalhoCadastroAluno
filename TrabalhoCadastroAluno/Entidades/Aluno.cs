@@ -5,7 +5,7 @@ public class Aluno
 
     public string Nome { get; set; }
 
-    public string Matricula { get; set; }
+    public int Matricula { get; set; }
 
     public string Cpf { get; set; }
 
@@ -16,7 +16,7 @@ public class Aluno
 
     }
 
-    public Aluno(string nome, string matricula, string Cpf, DateTime DataNascimento)
+    public Aluno(string nome, int  matricula, string Cpf, DateTime DataNascimento)
     {
         this.Nome = nome;
         this.Matricula = matricula;
