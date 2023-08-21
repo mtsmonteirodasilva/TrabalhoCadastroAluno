@@ -34,11 +34,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.tx_matricula = new System.Windows.Forms.TextBox();
             this.tx_nome = new System.Windows.Forms.TextBox();
-            this.tx_cpf = new System.Windows.Forms.TextBox();
-            this.tx_dataNascimento = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.bt_cadastar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.msk_cpf = new System.Windows.Forms.MaskedTextBox();
+            this.msk_datanasc = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -50,7 +50,6 @@
             this.label1.Size = new System.Drawing.Size(65, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Matricula";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -88,7 +87,6 @@
             this.tx_matricula.Name = "tx_matricula";
             this.tx_matricula.Size = new System.Drawing.Size(167, 20);
             this.tx_matricula.TabIndex = 4;
-            this.tx_matricula.TextChanged += new System.EventHandler(this.tx_matricula_TextChanged);
             // 
             // tx_nome
             // 
@@ -96,20 +94,6 @@
             this.tx_nome.Name = "tx_nome";
             this.tx_nome.Size = new System.Drawing.Size(188, 20);
             this.tx_nome.TabIndex = 5;
-            // 
-            // tx_cpf
-            // 
-            this.tx_cpf.Location = new System.Drawing.Point(58, 167);
-            this.tx_cpf.Name = "tx_cpf";
-            this.tx_cpf.Size = new System.Drawing.Size(202, 20);
-            this.tx_cpf.TabIndex = 6;
-            // 
-            // tx_dataNascimento
-            // 
-            this.tx_dataNascimento.Location = new System.Drawing.Point(160, 198);
-            this.tx_dataNascimento.Name = "tx_dataNascimento";
-            this.tx_dataNascimento.Size = new System.Drawing.Size(100, 20);
-            this.tx_dataNascimento.TabIndex = 7;
             // 
             // label5
             // 
@@ -144,17 +128,34 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // msk_cpf
+            // 
+            this.msk_cpf.Location = new System.Drawing.Point(72, 167);
+            this.msk_cpf.Mask = "000,000,000-00";
+            this.msk_cpf.Name = "msk_cpf";
+            this.msk_cpf.Size = new System.Drawing.Size(188, 20);
+            this.msk_cpf.TabIndex = 11;
+            // 
+            // msk_datanasc
+            // 
+            this.msk_datanasc.Location = new System.Drawing.Point(160, 196);
+            this.msk_datanasc.Mask = "00/00/0000";
+            this.msk_datanasc.Name = "msk_datanasc";
+            this.msk_datanasc.Size = new System.Drawing.Size(100, 20);
+            this.msk_datanasc.TabIndex = 12;
+            this.msk_datanasc.ValidatingType = typeof(System.DateTime);
+            // 
             // CadastroAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(368, 425);
+            this.Controls.Add(this.msk_datanasc);
+            this.Controls.Add(this.msk_cpf);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.bt_cadastar);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.tx_dataNascimento);
-            this.Controls.Add(this.tx_cpf);
             this.Controls.Add(this.tx_nome);
             this.Controls.Add(this.tx_matricula);
             this.Controls.Add(this.label4);
@@ -164,7 +165,6 @@
             this.Name = "CadastroAluno";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.CadastroAluno_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,11 +178,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tx_matricula;
         private System.Windows.Forms.TextBox tx_nome;
-        private System.Windows.Forms.TextBox tx_cpf;
-        private System.Windows.Forms.TextBox tx_dataNascimento;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button bt_cadastar;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.MaskedTextBox msk_cpf;
+        private System.Windows.Forms.MaskedTextBox msk_datanasc;
     }
 }
 

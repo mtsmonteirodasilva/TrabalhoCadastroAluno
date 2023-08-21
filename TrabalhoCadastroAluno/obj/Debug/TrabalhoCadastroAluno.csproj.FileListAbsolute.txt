@@ -12,3 +12,16 @@ C:\Users\2022102020080\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\
 C:\Users\2022102020080\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\obj\Debug\TrabalhoCadastroAluno.csproj.CopyComplete
 C:\Users\2022102020080\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\obj\Debug\TrabalhoCadastroAluno.exe
 C:\Users\2022102020080\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\obj\Debug\TrabalhoCadastroAluno.pdb
+C:\Users\phos_\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\bin\Debug\TrabalhoCadastroAluno.exe.config
+C:\Users\phos_\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\bin\Debug\TrabalhoCadastroAluno.exe
+C:\Users\phos_\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\bin\Debug\TrabalhoCadastroAluno.pdb
+C:\Users\phos_\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\bin\Debug\Xceed.Document.NET.dll
+C:\Users\phos_\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\bin\Debug\Xceed.Words.NET.dll
+C:\Users\phos_\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\obj\Debug\TrabalhoCadastroAluno.csproj.AssemblyReference.cache
+C:\Users\phos_\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\obj\Debug\TrabalhoCadastroAluno.CadastroAluno.resources
+C:\Users\phos_\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\obj\Debug\TrabalhoCadastroAluno.Properties.Resources.resources
+C:\Users\phos_\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\obj\Debug\TrabalhoCadastroAluno.csproj.GenerateResource.cache
+C:\Users\phos_\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\obj\Debug\TrabalhoCadastroAluno.csproj.CoreCompileInputs.cache
+C:\Users\phos_\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\obj\Debug\TrabalhoCadastroAluno.csproj.CopyComplete
+C:\Users\phos_\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\obj\Debug\TrabalhoCadastroAluno.exe
+C:\Users\phos_\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\obj\Debug\TrabalhoCadastroAluno.pdb

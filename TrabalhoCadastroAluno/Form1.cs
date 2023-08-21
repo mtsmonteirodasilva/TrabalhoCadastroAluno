@@ -1,14 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using Xceed.Document.NET;
 using Xceed.Words.NET;
+
 
 namespace TrabalhoCadastroAluno
 {
@@ -17,60 +13,61 @@ namespace TrabalhoCadastroAluno
         List<Aluno> alunos = new List<Aluno>();
         public CadastroAluno()
         {
-          
+
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
 
-        }
-
+        private DocX document;
         private void bt_cadastar_Click(object sender, EventArgs e)
         {
             Aluno aluno = new Aluno();
 
             string nome = aluno.Nome = tx_nome.Text;
             string matricula = aluno.Matricula = tx_matricula.Text;
-            string cpf = aluno.Cpf = tx_cpf.Text;
-            DateTime nascimento = aluno.DataNascimento = Convert.ToDateTime(tx_dataNascimento.Text);
+            string cpf = aluno.Cpf = msk_cpf.Text;
+            DateTime nascimento = aluno.DataNascimento = Convert.ToDateTime(msk_datanasc.Text);
 
             alunos.Add(aluno);
 
-            SalvarNoDocumento(nome,matricula,cpf, nascimento);
+            SalvarNoDocumento(nome, matricula, cpf, nascimento);
 
             MessageBox.Show("Aluno cadastrado com sucesso e dados salvos em um documento .docx!");
         }
+       
 
-        private void SalvarNoDocumento(string nome, string cpf,string matricula, DateTime nascimento)
+        private void SalvarNoDocumento(string nome, string cpf, string matricula, DateTime nascimento)
         {
-            using (DocX document = DocX.Create("alunos.docx"))
             {
-                document.InsertParagraph("Lista de Alunos");
-                //File.WriteAllText(nome, cpf, matricula);
-                document.InsertParagraph($"Nome: {nome}, \nCpf: {cpf}, \nMatricula :{matricula}, \n Data de nascimento:{nascimento} ");
+                string filePath = "alunos.docx";
 
-                document.Save();
+                if (File.Exists(filePath))
+                {
+                    using (DocX document = DocX.Load(filePath))
+                    {
+                        document.InsertParagraph($"\n Nome: {nome}\n Matricula: {matricula}\n cpf: {cpf}\n Idade{nascimento}");
+                        document.Save();
+                    }
+                }
+                else
+                {
+                    using (DocX document = DocX.Create(filePath))
+                    {
+                        document.InsertParagraph("Lista de Alunos").FontSize(18).Bold().Alignment = Alignment.center;
+                        document.InsertParagraph($"Nome: {nome}\n Matricula: {matricula}\n cpf: {cpf}\n Idade{nascimento}\n");
+                        document.Save();
+                    }
+                }
+
             }
-
-        }
-
-        private void CadastroAluno_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void tx_matricula_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             tx_nome.Clear();
             tx_matricula.Clear();
-            tx_cpf.Clear();
-            tx_dataNascimento.Clear();
+            msk_cpf.Clear();
+            msk_datanasc.Clear();
         }
-    }
+    } 
 }
