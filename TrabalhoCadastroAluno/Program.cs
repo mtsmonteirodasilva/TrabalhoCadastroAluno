@@ -16,7 +16,7 @@ namespace TrabalhoCadastroAluno
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CadastroAluno());
+            Application.Run(new Menu());
         }
     }
 }

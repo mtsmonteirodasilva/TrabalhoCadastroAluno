@@ -34,7 +34,7 @@ namespace TrabalhoCadastroAluno
 
             MessageBox.Show("Aluno cadastrado com sucesso e dados salvos em um documento .docx!");
         }
-       
+
 
         private void SalvarNoDocumento(string nome, string cpf, string matricula, DateTime nascimento)
         {
@@ -69,5 +69,11 @@ namespace TrabalhoCadastroAluno
             msk_cpf.Clear();
             msk_datanasc.Clear();
         }
-    } 
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Menu m = new Menu();
+            m.ShowDialog();
+        }
+    }
 }

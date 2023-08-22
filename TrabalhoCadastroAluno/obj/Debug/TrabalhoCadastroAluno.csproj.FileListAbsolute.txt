@@ -25,3 +25,5 @@ C:\Users\phos_\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\obj\Debu
 C:\Users\phos_\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\obj\Debug\TrabalhoCadastroAluno.csproj.CopyComplete
 C:\Users\phos_\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\obj\Debug\TrabalhoCadastroAluno.exe
 C:\Users\phos_\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\obj\Debug\TrabalhoCadastroAluno.pdb
+C:\Users\phos_\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\obj\Debug\TrabalhoCadastroAluno.Menu.resources
+C:\Users\phos_\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\obj\Debug\TrabalhoCadastroAluno.CadastroResponsavel.resources

@@ -39,6 +39,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.msk_cpf = new System.Windows.Forms.MaskedTextBox();
             this.msk_datanasc = new System.Windows.Forms.MaskedTextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -145,12 +146,24 @@
             this.msk_datanasc.TabIndex = 12;
             this.msk_datanasc.ValidatingType = typeof(System.DateTime);
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(93, 360);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(84, 27);
+            this.button2.TabIndex = 13;
+            this.button2.Text = "Menu";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // CadastroAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(368, 425);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.msk_datanasc);
             this.Controls.Add(this.msk_cpf);
             this.Controls.Add(this.button1);
@@ -164,7 +177,7 @@
             this.Controls.Add(this.label1);
             this.Name = "CadastroAluno";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Text = "Form1";
+            this.Text = "CadastroAluno";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -183,6 +196,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.MaskedTextBox msk_cpf;
         private System.Windows.Forms.MaskedTextBox msk_datanasc;
+        private System.Windows.Forms.Button button2;
     }
 }
 
