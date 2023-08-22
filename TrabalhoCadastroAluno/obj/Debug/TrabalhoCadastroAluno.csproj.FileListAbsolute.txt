@@ -25,5 +25,22 @@ C:\Users\phos_\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\obj\Debu
 C:\Users\phos_\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\obj\Debug\TrabalhoCadastroAluno.csproj.CopyComplete
 C:\Users\phos_\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\obj\Debug\TrabalhoCadastroAluno.exe
 C:\Users\phos_\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\obj\Debug\TrabalhoCadastroAluno.pdb
+<<<<<<< HEAD
 C:\Users\phos_\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\obj\Debug\TrabalhoCadastroAluno.Menu.resources
 C:\Users\phos_\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\obj\Debug\TrabalhoCadastroAluno.CadastroResponsavel.resources
+=======
+C:\Users\2022102020034\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\bin\Debug\TrabalhoCadastroAluno.exe.config
+C:\Users\2022102020034\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\bin\Debug\TrabalhoCadastroAluno.exe
+C:\Users\2022102020034\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\bin\Debug\TrabalhoCadastroAluno.pdb
+C:\Users\2022102020034\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\bin\Debug\Xceed.Document.NET.dll
+C:\Users\2022102020034\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\bin\Debug\Xceed.Words.NET.dll
+C:\Users\2022102020034\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\obj\Debug\TrabalhoCadastroAluno.csproj.AssemblyReference.cache
+C:\Users\2022102020034\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\obj\Debug\TrabalhoCadastroAluno.csproj.SuggestedBindingRedirects.cache
+C:\Users\2022102020034\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\obj\Debug\TrabalhoCadastroAluno.CadastroAluno.resources
+C:\Users\2022102020034\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\obj\Debug\TrabalhoCadastroAluno.Properties.Resources.resources
+C:\Users\2022102020034\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\obj\Debug\TrabalhoCadastroAluno.csproj.GenerateResource.cache
+C:\Users\2022102020034\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\obj\Debug\TrabalhoCadastroAluno.csproj.CoreCompileInputs.cache
+C:\Users\2022102020034\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\obj\Debug\TrabalhoCadastroAluno.csproj.CopyComplete
+C:\Users\2022102020034\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\obj\Debug\TrabalhoCadastroAluno.exe
+C:\Users\2022102020034\source\repos\TrabalhoCadastroAluno\TrabalhoCadastroAluno\obj\Debug\TrabalhoCadastroAluno.pdb
+>>>>>>> 8adbb33ffdd56b9deb15249b38286394e9cf48a5
