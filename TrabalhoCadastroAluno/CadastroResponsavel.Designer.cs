@@ -45,8 +45,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(110, 186);
+            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(21, 127);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 16);
             this.label1.TabIndex = 0;
@@ -55,28 +55,28 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(110, 236);
+            this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(21, 155);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(27, 16);
+            this.label2.Size = new System.Drawing.Size(28, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Cpf";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(110, 281);
+            this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(21, 181);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 16);
+            this.label3.Size = new System.Drawing.Size(63, 16);
             this.label3.TabIndex = 2;
             this.label3.Text = "Endereço";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(110, 324);
+            this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(21, 211);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 16);
             this.label4.TabIndex = 3;
@@ -84,48 +84,48 @@
             // 
             // tx_nome
             // 
-            this.tx_nome.Location = new System.Drawing.Point(186, 186);
+            this.tx_nome.Location = new System.Drawing.Point(71, 127);
             this.tx_nome.Name = "tx_nome";
-            this.tx_nome.Size = new System.Drawing.Size(100, 20);
+            this.tx_nome.Size = new System.Drawing.Size(143, 20);
             this.tx_nome.TabIndex = 4;
             // 
             // tx_endereco
             // 
-            this.tx_endereco.Location = new System.Drawing.Point(186, 277);
+            this.tx_endereco.Location = new System.Drawing.Point(88, 177);
             this.tx_endereco.Name = "tx_endereco";
-            this.tx_endereco.Size = new System.Drawing.Size(100, 20);
+            this.tx_endereco.Size = new System.Drawing.Size(126, 20);
             this.tx_endereco.TabIndex = 5;
             // 
             // msk_cpf
             // 
-            this.msk_cpf.Location = new System.Drawing.Point(186, 235);
+            this.msk_cpf.Location = new System.Drawing.Point(55, 151);
             this.msk_cpf.Mask = "000,000,000-00";
             this.msk_cpf.Name = "msk_cpf";
-            this.msk_cpf.Size = new System.Drawing.Size(100, 20);
+            this.msk_cpf.Size = new System.Drawing.Size(159, 20);
             this.msk_cpf.TabIndex = 6;
             // 
             // msk_telefone
             // 
-            this.msk_telefone.Location = new System.Drawing.Point(186, 320);
+            this.msk_telefone.Location = new System.Drawing.Point(88, 207);
             this.msk_telefone.Mask = "(00) 00000-0000";
             this.msk_telefone.Name = "msk_telefone";
-            this.msk_telefone.Size = new System.Drawing.Size(100, 20);
+            this.msk_telefone.Size = new System.Drawing.Size(126, 20);
             this.msk_telefone.TabIndex = 7;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(168, 72);
+            this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(37, 41);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(450, 42);
+            this.label5.Size = new System.Drawing.Size(313, 27);
             this.label5.TabIndex = 8;
-            this.label5.Text = "Cadastro de Responsavel";
+            this.label5.Text = "CADASTRO DO RESPONSAVEL";
             // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(579, 370);
+            this.button3.Location = new System.Drawing.Point(183, 384);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(84, 33);
             this.button3.TabIndex = 11;
@@ -136,7 +136,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(488, 370);
+            this.button1.Location = new System.Drawing.Point(92, 384);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(85, 33);
             this.button1.TabIndex = 12;
@@ -147,7 +147,7 @@
             // bt_cadastrar
             // 
             this.bt_cadastrar.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_cadastrar.Location = new System.Drawing.Point(669, 370);
+            this.bt_cadastrar.Location = new System.Drawing.Point(273, 384);
             this.bt_cadastrar.Name = "bt_cadastrar";
             this.bt_cadastrar.Size = new System.Drawing.Size(84, 33);
             this.bt_cadastrar.TabIndex = 13;
@@ -159,7 +159,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(362, 450);
             this.Controls.Add(this.bt_cadastrar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button3);

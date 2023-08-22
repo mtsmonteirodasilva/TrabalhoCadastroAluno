@@ -31,25 +31,25 @@ using Xceed.Words.NET;
                 Aluno aluno = new Aluno();
 
                 string nome = aluno.Nome = tx_nome.Text;
-                int matricula = aluno.Matricula = Convert.ToInt32(tx_matricula.Text);
+                string matricula = aluno.Matricula = tx_matricula.Text;
                 string cpf = aluno.Cpf = msk_cpf.Text;
                 DateTime nascimento = aluno.DataNascimento = Convert.ToDateTime(msk_datanasc.Text);
 
                 alunos.Add(aluno);
 
-                SalvarNoDocumento(nome, cpf,matricula, nascimento);
+                SalvarNoDocumento(nome, cpf, matricula, nascimento);
 
                 MessageBox.Show("Aluno cadastrado com sucesso e dados salvos em um documento .docx!");
             }
             catch (Exception ex) 
             {
-                MessageBox.Show("Ocorreu um erro, digite os numeros novamente. ");
+               MessageBox.Show("Ocorreu um erro, digite os dados novamente. ");
             }
            
         }
 
 
-        private void SalvarNoDocumento(string nome, string cpf, int matricula, DateTime nascimento)
+        private void SalvarNoDocumento(string nome, string cpf, string matricula, DateTime nascimento)
         {
             {
                 try

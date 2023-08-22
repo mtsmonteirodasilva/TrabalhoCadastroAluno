@@ -36,18 +36,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(134, 61);
+            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(81, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(170, 42);
+            this.label1.Size = new System.Drawing.Size(124, 27);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Cadastro";
+            this.label1.Text = "CADASTRO";
             // 
             // bt_aluno
             // 
-            this.bt_aluno.Location = new System.Drawing.Point(176, 173);
+            this.bt_aluno.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_aluno.Location = new System.Drawing.Point(95, 109);
             this.bt_aluno.Name = "bt_aluno";
-            this.bt_aluno.Size = new System.Drawing.Size(75, 23);
+            this.bt_aluno.Size = new System.Drawing.Size(97, 23);
             this.bt_aluno.TabIndex = 1;
             this.bt_aluno.Text = "Aluno ";
             this.bt_aluno.UseVisualStyleBackColor = true;
@@ -55,7 +56,8 @@
             // 
             // bt_responsavel
             // 
-            this.bt_responsavel.Location = new System.Drawing.Point(166, 236);
+            this.bt_responsavel.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_responsavel.Location = new System.Drawing.Point(95, 164);
             this.bt_responsavel.Name = "bt_responsavel";
             this.bt_responsavel.Size = new System.Drawing.Size(97, 23);
             this.bt_responsavel.TabIndex = 2;
@@ -67,7 +69,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(509, 450);
+            this.ClientSize = new System.Drawing.Size(290, 281);
             this.Controls.Add(this.bt_responsavel);
             this.Controls.Add(this.bt_aluno);
             this.Controls.Add(this.label1);

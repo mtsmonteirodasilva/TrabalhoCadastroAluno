@@ -40,10 +40,10 @@ namespace TrabalhoCadastroAluno
         }
         private void SalvarNoDocumento(string nome, string cpf, string endereco, string telefone)
         {
-            string filePath = "responsavel.docx";
+            try
+            {
+                string filePath = "responsavel.docx";
 
-            
-            
                 if (File.Exists(filePath))
                 {
                     using (DocX document = DocX.Load(filePath))
@@ -61,7 +61,13 @@ namespace TrabalhoCadastroAluno
                         document.Save();
                     }
                 }
-            
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao salvar os dados. ");
+            }
+
+
         }
 
         private void button3_Click(object sender, EventArgs e)
