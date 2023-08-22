@@ -47,11 +47,7 @@ using Xceed.Words.NET;
             }
            
         }
-<<<<<<< HEAD:TrabalhoCadastroAluno/CadastroAluno.cs
 
-=======
-        
->>>>>>> 8adbb33ffdd56b9deb15249b38286394e9cf48a5:TrabalhoCadastroAluno/Form1.cs
 
         private void SalvarNoDocumento(string nome, string cpf, int matricula, DateTime nascimento)
         {
@@ -93,7 +89,7 @@ using Xceed.Words.NET;
             msk_cpf.Clear();
             msk_datanasc.Clear();
         }
-<<<<<<< HEAD:TrabalhoCadastroAluno/CadastroAluno.cs
+
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -102,7 +98,5 @@ using Xceed.Words.NET;
         }
     }
 }
-=======
-    }
-}
->>>>>>> 8adbb33ffdd56b9deb15249b38286394e9cf48a5:TrabalhoCadastroAluno/Form1.cs
+
+    
