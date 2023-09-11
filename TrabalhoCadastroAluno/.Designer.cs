@@ -40,6 +40,9 @@
             this.msk_cpf = new System.Windows.Forms.MaskedTextBox();
             this.msk_datanasc = new System.Windows.Forms.MaskedTextBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.bt_excluir = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -110,7 +113,7 @@
             // bt_cadastar
             // 
             this.bt_cadastar.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_cadastar.Location = new System.Drawing.Point(264, 360);
+            this.bt_cadastar.Location = new System.Drawing.Point(174, 236);
             this.bt_cadastar.Name = "bt_cadastar";
             this.bt_cadastar.Size = new System.Drawing.Size(92, 27);
             this.bt_cadastar.TabIndex = 9;
@@ -121,7 +124,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(183, 360);
+            this.button1.Location = new System.Drawing.Point(93, 236);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 27);
             this.button1.TabIndex = 10;
@@ -149,7 +152,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(93, 360);
+            this.button2.Location = new System.Drawing.Point(3, 236);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(84, 27);
             this.button2.TabIndex = 13;
@@ -157,12 +160,33 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 269);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(368, 150);
+            this.dataGridView1.TabIndex = 14;
+            // 
+            // bt_excluir
+            // 
+            this.bt_excluir.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_excluir.Location = new System.Drawing.Point(272, 236);
+            this.bt_excluir.Name = "bt_excluir";
+            this.bt_excluir.Size = new System.Drawing.Size(84, 27);
+            this.bt_excluir.TabIndex = 15;
+            this.bt_excluir.Text = "Excluir";
+            this.bt_excluir.UseVisualStyleBackColor = true;
+            this.bt_excluir.Click += new System.EventHandler(this.button3_Click);
+            // 
             // CadastroAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(368, 425);
+            this.Controls.Add(this.bt_excluir);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.msk_datanasc);
             this.Controls.Add(this.msk_cpf);
@@ -178,6 +202,7 @@
             this.Name = "CadastroAluno";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "CadastroAluno";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -197,6 +222,8 @@
         private System.Windows.Forms.MaskedTextBox msk_cpf;
         private System.Windows.Forms.MaskedTextBox msk_datanasc;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button bt_excluir;
     }
 }
 

@@ -23,10 +23,9 @@ namespace TrabalhoCadastroAluno
             c.ShowDialog();
         }
 
-        private void bt_responsavel_Click(object sender, EventArgs e)
+        private void bt_sair_Click(object sender, EventArgs e)
         {
-            CadastroResponsavel c2 = new CadastroResponsavel();
-            c2.ShowDialog();
+            this.Close();
         }
     }
 }

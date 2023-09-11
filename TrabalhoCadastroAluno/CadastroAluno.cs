@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.IO;
 using System.Linq.Expressions;
 using System.Windows.Forms;
+using System.Xml.Linq;
 using Xceed.Document.NET;
 using Xceed.Words.NET;
 
@@ -26,30 +28,38 @@ using Xceed.Words.NET;
 
         private void bt_cadastar_Click(object sender, EventArgs e)
         {
+            Aluno aluno = new Aluno();
             try
             {
-                Aluno aluno = new Aluno();
+                SalvarNoDocumento();
 
-                string nome = aluno.Nome = tx_nome.Text;
-                string matricula = aluno.Matricula = tx_matricula.Text;
-                string cpf = aluno.Cpf = msk_cpf.Text;
-                DateTime nascimento = aluno.DataNascimento = Convert.ToDateTime(msk_datanasc.Text);
+                aluno.Nome = tx_nome.Text;
+                aluno.Matricula = tx_matricula.Text;
+                aluno.Cpf = msk_cpf.Text;
+                aluno.DataNascimento = Convert.ToDateTime(msk_datanasc.Text);
 
-                alunos.Add(aluno);
-
-                SalvarNoDocumento(nome, cpf, matricula, nascimento);
-
-                MessageBox.Show("Aluno cadastrado com sucesso e dados salvos em um documento .docx!");
+                if (Validar())
+                {
+                    alunos.Add(aluno);
+                    dataGridView1.DataSource = null;
+                    dataGridView1.Refresh();
+                    dataGridView1.DataSource = alunos;
+                }
+                else
+                {
+                    MessageBox.Show("Preencha todos os campos");
+                }
             }
-            catch (Exception ex) 
+            
+            catch (Exception ex)
             {
-               MessageBox.Show("Ocorreu um erro, digite os dados novamente. ");
+                MessageBox.Show("Preencha os dados corretamente!!!");
             }
-           
+
         }
 
 
-        private void SalvarNoDocumento(string nome, string cpf, string matricula, DateTime nascimento)
+        private void SalvarNoDocumento()
         {
             {
                 try
@@ -60,7 +70,7 @@ using Xceed.Words.NET;
                     {
                         using (DocX document = DocX.Load(filePath))
                         {
-                            document.InsertParagraph($"\n Nome: {nome}\n Matricula: {matricula}\n cpf: {cpf}\n Idade{nascimento}");
+                            document.InsertParagraph($"\n Nome: {tx_nome.Text} \n Matricula: {tx_matricula.Text} \n cpf: {msk_cpf.Text} \n Idade: {msk_datanasc.Text}");
                             document.Save();
                         }
                     }
@@ -69,7 +79,7 @@ using Xceed.Words.NET;
                         using (DocX document = DocX.Create(filePath))
                         {
                             document.InsertParagraph("Lista de Alunos");
-                            document.InsertParagraph($"Nome: {nome}\n Matricula: {matricula}\n cpf: {cpf}\n Idade{nascimento}\n");
+                            document.InsertParagraph($"\n Nome: {tx_nome.Text} \n Matricula: {tx_matricula.Text} \n cpf: {msk_cpf.Text}  \n Idade{msk_datanasc.Text}\n");
                             document.Save();
                         }
                     }
@@ -95,6 +105,49 @@ using Xceed.Words.NET;
         {
             Menu m = new Menu();
             m.ShowDialog();
+        }
+        public bool Validar()
+        {
+            bool validacao;
+
+            if (tx_nome.Text == "")
+            {
+                validacao = false;
+            }
+            else if (msk_cpf.Text == "")
+            {
+                validacao = false;
+            }
+            else if (tx_matricula.Text == "")
+            {
+                validacao = false;
+            }
+            else if (msk_datanasc.Text == "")
+            {
+                validacao = false;
+            }
+            else
+            {
+                validacao = true;
+            }
+            return validacao;
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int index = dataGridView1.CurrentCell.RowIndex;
+                alunos.RemoveAt(index);
+                dataGridView1.DataSource = null;
+                dataGridView1.Refresh();
+                dataGridView1.DataSource = alunos;
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show("Não há mais celular restantes para excluir!");
+            }
         }
     }
 }

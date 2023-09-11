@@ -52,12 +52,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CadastroResponsavel.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CadastroResponsavel.Designer.cs">
-      <DependentUpon>CadastroResponsavel.cs</DependentUpon>
-    </Compile>
     <Compile Include="Documento.cs" />
     <Compile Include="Entidades\Aluno.cs" />
     <Compile Include="CadastroAluno.cs">
@@ -78,9 +72,6 @@
     <Compile Include="Responsavel.cs" />
     <EmbeddedResource Include="CadastroAluno.resx">
       <DependentUpon>CadastroAluno.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CadastroResponsavel.resx">
-      <DependentUpon>CadastroResponsavel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
